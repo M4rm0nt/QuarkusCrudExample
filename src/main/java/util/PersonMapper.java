@@ -18,6 +18,7 @@ public class PersonMapper {
 
     public PersonDTO mapToDTO(Person person) {
         PersonDTO personDTO = new PersonDTO();
+        personDTO.setId(person.getId());
         personDTO.setName(person.getName());
         personDTO.setEmail(person.getEmail());
         return personDTO;
