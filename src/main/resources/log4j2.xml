@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <!--
+    Log Level Erklärungen:
+    TRACE: Der detaillierteste Level, der zur Diagnose von Problemen auf sehr niedriger Ebene verwendet wird.
+    DEBUG: Wird verwendet, um detaillierte Informationen zu loggen, die hauptsächlich während der Entwicklung nützlich sind.
+    INFO: Wird verwendet, um allgemeine Informationen über den Fortschritt oder den Status einer Anwendung zu loggen.
+    WARN: Wird verwendet, um auf potenzielle Probleme hinzuweisen, die nicht unbedingt zu einem Fehler führen, aber beachtet werden sollten.
+    ERROR: Wird verwendet, um ernsthafte Probleme zu loggen, die verhindert haben, dass eine bestimmte Operation oder ein bestimmter Prozess ausgeführt wird.
+    FATAL: Wird verwendet, um sehr ernste Fehler zu loggen, die möglicherweise dazu führen, dass die Anwendung stoppt.
+    -->
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="trace">
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+</Configuration>
